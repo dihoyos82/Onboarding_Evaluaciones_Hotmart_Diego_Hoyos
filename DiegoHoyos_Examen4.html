@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let salEmpConfianza = 500;
+    let salEmpSindicato = 250;
+
+    class Persona {
+        nombre;
+        empleado;
+        edad;
+            getDetalle(){
+                var min = 5;
+                var max = 15;
+                var x = Math.floor(Math.random()*(max - min)+min);
+                if (this.empleado = "C"){
+                    var X1 = salEmpConfianza * x;
+                    console.log(this.nombre + " de " + this.edad + " años - " + this.empleado + " Pertenece a Empleado de Confianza con un sueldo de "
+                    + X1 + " por " + " dias trabajados");
+                }
+                else{
+                    var X1 = salEmpSindicato * x;
+                    console.log(this.nombre + " de " + this.edad + " años - " + this.empleado + " Pertenece a Empleado de Confianza con un sueldo de "
+                        + X1 + " por " + " dias trabajados");
+                    }
+            }
+        constructor(nombre, empleado, edad){
+            this.nombre=nombre;
+            this.empleado=empleado;
+            this.edad=edad;
+
+        }
+
+    }
+    let persona1 = new Persona("Maria Carvajal", "C", "33");
+    let persona2 = new Persona("Juan ALmeria", "C", "32");
+    let persona3 = new Persona("Dulce Salguedo", "S", "42");
+    console.log(persona1.getDetalle());
+    console.log(persona2.getDetalle());
+    console.log(persona3.getDetalle());
+
+    class empleado extends Persona{
+        getDetalle(){
+            console.log("")
+
+        }
+        constructor(nombre, empleado, edad){
+            super(empleado, edad , nombre);
+            this.empleado=empleado;
+            //this.edad=edad;
+        }
+    }
+
+    class nomina {
+        getDetalle(){
+            console.log("");
+        }
+        /*constructor(nombre, empleado, edad){
+            var arreglo = new arreglo;
+            for
+        }*/
+    }
+
+    let empleado1 = new empleado("C", "33");
+    let empleado2= new empleado("C", "32");
+    let empleado3= new empleado("S", "42");
+    console.log(empleado1.getDetalle());
+    console.log(empleado2.getDetalle());
+    console.log(empleado3.getDetalle());
+
+    let nomina1 = new empleado("C");
+    let nomina2= new empleado("C");
+    let nomina3= new empleado("S")
+    console.log(nomina1.getDetalle());
+    console.log(nomina2.getDetalle());
+    console.log(nomina3.getDetalle());
+
+
+
+</script>
+</body>
+</html>

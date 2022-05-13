@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let matriz1=[3,2,1,1,2,3,2,3,1];
+    let matriz2=[1,1,2,2,1,1,1,2,1];
+    let resultadoSuma = 0;
+    let resultadoMultiplicacion=0;
+    let x = 0;
+    let i =0;
+    let j =0;
+    let valorMatriz1;
+    let valorMatriz2;
+
+    console.log("Matriz 1: " + matriz1);
+    console.log("---------------------------------------------");
+    console.log("Matriz 2: " +matriz2);
+    console.log("---------------------------------------------");
+
+
+        while (x <= matriz1.length){
+            valorMatriz2=matriz2[j];
+            valorMatriz1 = matriz1[i];
+            i++;
+            j++;
+            x++;
+            resultadoSuma = valorMatriz1 +  valorMatriz2;
+            console.log(valorMatriz1 + " + " + valorMatriz2 + " = " + resultadoSuma);
+            resultadoMultiplicacion = valorMatriz1 *  valorMatriz2;
+            console.log(valorMatriz1 + " * " + valorMatriz2 + " = " + resultadoMultiplicacion);
+            console.log("---------------------------------------------");
+    }
+</script>
+</body>
+</html>

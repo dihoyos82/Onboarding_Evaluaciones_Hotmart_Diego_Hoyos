@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var salMensualOrd =0;
+    var salMensualExtras =0;
+    var horasExtrastotal;
+    var horasOrd = 40;
+    var horasExtras = 53;
+    var valorHorasOrd = 265;
+    var valorhorasExtras = 350;
+
+
+    if ( horasExtras <= horasOrd ){
+        salMensualOrd = horasOrd * valorHorasOrd;
+        console.log("El total a pagar por horas laborales normal (40hrs) es de: " + salMensualOrd);
+    }
+    else{
+        salMensualOrd = horasOrd * valorHorasOrd;
+        horasExtrastotal = horasExtras - horasOrd;
+        salMensualExtras = horasExtrastotal * valorhorasExtras;
+        console.log("El total a pagar por horas laborales normal (40hrs) es de: " + salMensualOrd);
+        console.log("El total a pagar por horas Extras " + horasExtrastotal + " hrs es de: " + + salMensualExtras);
+    }
+
+
+
+</script>
+</body>
+</html>
