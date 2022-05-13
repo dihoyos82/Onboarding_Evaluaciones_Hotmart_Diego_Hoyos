@@ -17,15 +17,16 @@
                 var min = 5;
                 var max = 15;
                 var x = Math.floor(Math.random()*(max - min)+min);
+
                 if (this.empleado = "C"){
-                    var X1 = salEmpConfianza * x;
+                var X1 = ((salEmpConfianza *x) * (13/100));
                     console.log(this.nombre + " de " + this.edad + " años - " + this.empleado + " Pertenece a Empleado de Confianza con un sueldo de "
-                    + X1 + " por " + " dias trabajados");
+                    + X1 + " por " +  x  + " dias trabajados");
                 }
                 else{
-                    var X1 = salEmpSindicato * x;
+                    var X1 = ((salEmpSindicato *x) * (10/100));
                     console.log(this.nombre + " de " + this.edad + " años - " + this.empleado + " Pertenece a Empleado de Confianza con un sueldo de "
-                        + X1 + " por " + " dias trabajados");
+                        + X1 + " por " +  x  +  " dias trabajados");
                     }
             }
         constructor(nombre, empleado, edad){
@@ -45,7 +46,7 @@
 
     class empleado extends Persona{
         getDetalle(){
-            console.log("")
+            //console.log("")
 
         }
         constructor(nombre, empleado, edad){
@@ -54,17 +55,6 @@
             //this.edad=edad;
         }
     }
-
-    class nomina {
-        getDetalle(){
-            console.log("");
-        }
-        /*constructor(nombre, empleado, edad){
-            var arreglo = new arreglo;
-            for
-        }*/
-    }
-
     let empleado1 = new empleado("C", "33");
     let empleado2= new empleado("C", "32");
     let empleado3= new empleado("S", "42");
@@ -72,13 +62,31 @@
     console.log(empleado2.getDetalle());
     console.log(empleado3.getDetalle());
 
+    class nomina {
+        getDetalle(){
+            var arreglo = new arreglo;
+            for (var x =0; x<arreglo.length; x++){
+                arreglo[x] = this.nomina1;
+                arreglo[x] = this.nomina1;
+                arreglo[x] = this.nomina1;
+                //console.log(arreglo);
+
+            }
+        }
+            constructor(empleado){
+                this.nomina1=empleado;
+                this.nomina2=empleado;
+                this.nomina3=empleado;
+        }
+    }
+
+
     let nomina1 = new empleado("C");
     let nomina2= new empleado("C");
-    let nomina3= new empleado("S")
+    let nomina3= new empleado("S");
     console.log(nomina1.getDetalle());
     console.log(nomina2.getDetalle());
     console.log(nomina3.getDetalle());
-
 
 
 </script>
